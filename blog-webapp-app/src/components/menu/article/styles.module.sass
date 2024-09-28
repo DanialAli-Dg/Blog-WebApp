@@ -1,0 +1,290 @@
+@use "../../../utils/colors.sass"
+@use "../../../utils/fonts.sass"
+
+$issue: 970px
+$small: 746px
+
+.BG
+    color: white
+    background: #ffffff
+    z-index: 1
+    position: relative
+
+.Container
+    margin: 2rem auto
+    width: 86.1%
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    gap: 1.25rem
+
+.Menu
+    // width: 24.18%
+    padding: 0rem 1.5rem
+    display: flex
+    flex-direction: column
+    gap: 2.5rem
+    position: sticky
+    top: 1.5rem
+
+.Search
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+    @include fonts.fontDesktopH4Bold
+
+.CategoriesTitle
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+    @include fonts.fontDesktopH4Bold
+
+.SearchBox
+    input
+        display: flex
+        height: 3rem
+        padding: 0rem 0.5rem
+        align-items: center
+        align-self: stretch
+        border-radius: 1.25rem
+        border: 1px solid var(--neutral-5, #D9E0DC)
+        background: var(--neutral-1, #FFF)
+
+.CardArticle
+
+
+.SearchIcon
+    margin-left: 1rem
+    
+.Button
+    width: 100%
+
+.Button
+    button
+        display: flex
+        height: 3rem
+        padding: 0.25rem 0.9375rem
+        align-items: center
+        gap: 0.625rem
+        align-self: stretch
+        border-radius: 0.625rem
+        width: 100%
+        background: transparent
+        color: var(--character-title-85, rgba(0, 0, 0, 0.85)) !important
+        box-shadow: none
+        background: none !important
+        justify-content: flex-start
+        @include fonts.fontDesktopBodyRegular
+        
+.Button
+    button:hover
+        border: 1px solid var(--backgroundGrey, #F6F5F8) !important
+        background-color: var(--backgroundGrey, #F6F5F8) !important 
+        color: var(--character-title-85, rgba(0, 0, 0, 0.85)) !important
+
+.Selected
+    button
+        border: 1px solid var(--backgroundGrey, #F6F5F8)
+        background: var(--backgroundGrey, #F6F5F8) 
+        @include fonts.fontDesktopBodyBold
+        
+.BodyArticle
+    display: flex
+    padding: var(--Spacing-16, 1rem) var(--Spacing-24, 1.5rem)
+    flex-direction: column
+    align-items: flex-start
+    gap: var(--Spacing-16, 1rem)
+    align-self: stretch
+    height: 14rem
+    justify-content: space-evenly
+    
+.TagArticle
+    display: flex
+    height: 2rem
+    padding: 0.0625rem 1rem
+    align-items: center
+    gap: 0.1875rem
+    border-radius: 0.625rem
+    border: 1px solid var(--primary-3, #91D0AD)
+
+.TagArticleText
+    @include fonts.fontFootnote
+    color: var(--primary-6, #009241)
+    margin: 0
+    padding: 0
+.TextArticle
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    align-self: stretch
+
+.TextArticleText
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+    @include fonts.fontDesktopH5Regular
+    margin: 0
+    padding: 0
+.AuthorArticle
+    @include fonts.fontDesktopBodyRegular
+    color: var(--character-primary-85, rgba(0, 0, 0, 0.85))
+    margin: 0
+    padding: 0
+.DateArticle
+    @include fonts.fontDesktopBodyRegular
+    color: var(--character-secondary-45, rgba(0, 0, 0, 0.45))
+    margin: 0
+    padding: 0
+
+
+.CategoriesTitle
+    margin-bottom: 0.5rem
+.Categories
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 0.5rem
+    align-self: stretch
+
+.CatBox
+    display: flex
+    padding: var(--Spacing-16, 1rem) 0rem
+    flex-direction: column
+    align-items: center
+    gap: var(--Spacing-32, 2rem)
+    align-self: stretch
+    align-items: flex-start
+
+.Data
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 2.5rem
+    flex: 1 0 0
+
+.CatBoxTitle
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+    @include fonts.fontDesktopH3Medium
+    
+.CatBoxData
+    display: flex
+    align-items: flex-start
+    gap: 1.25rem
+    align-self: stretch
+    flex-wrap: wrap
+.CatBoxCard
+    display: flex
+    width: 15.6rem
+    height: 15rem
+    padding: var(--Spacing-32, 2rem) var(--Spacing-24, 1.5rem)
+    flex-direction: column
+    align-items: flex-start
+    gap: var(--Spacing-24, 1.5rem)
+    border-radius: 1.25rem
+    background: var(--backgroundGrey, #F6F5F8)
+
+.CatBoxCardLogo
+    display: flex
+    width: 4.5rem
+    height: 4.5rem
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 1.23981rem
+    border-radius: 18rem
+    // background: #738B45
+    backdrop-filter: blur(9.91872501373291px)
+
+.CatBoxCardData
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 1rem
+    align-self: stretch
+    backdrop-filter: blur(6.199203014373779px)
+.ArticleBoxCard
+    display: flex
+    width: 18.3125rem
+    flex-direction: column
+    align-items: flex-start
+    border-radius: 0.625rem
+    background: var(--backgroundGrey, #F6F5F8)
+    cursor: pointer
+
+.ArticleBoxCard img
+    border-radius: 0.625rem 0.625rem 0rem 0rem
+    width: 100%
+    height: 13rem
+
+
+.CatBoxCardDataTitle
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+    @include fonts.fontDesktopH5Bold
+
+.CatBoxCardDataSubTitle
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+    @include fonts.fontDesktopBodyRegular
+
+
+.CreatePost
+    display: flex
+    justify-content: center
+    align-items: center
+    button
+        width: 100%
+        padding: 0.75rem 1.5rem
+        border: 1px solid var(--backgroundGrey, #ededed) !important
+        background-color: var(--backgroundGrey, #ededed) !important
+        color: var(--character-title-85, rgba(0, 0, 0, 0.85)) !important
+        border-radius: 0.625rem
+        color: white
+        font-size: 1rem
+        @include fonts.fontDesktopBodyBold
+        &:hover
+            background-color: #dbdbdb !important
+
+
+@media (max-width: $small)
+    .Container
+        flex-direction: column
+        align-items: center
+    .Menu
+        width: 100%
+        align-items: flex-start
+    .Search
+        width: 100%
+    .CategoriesTitle
+        display: none
+    .Categories
+        flex-direction: row
+        flex-wrap: wrap
+    .Button
+        width: auto
+    .Button
+        button
+            display: flex
+            height: 2rem
+            justify-content: center
+            align-items: center
+            border-radius: 0.5rem
+            @include fonts.fontMobileBodyRegular
+            
+    .Selected
+        button
+            @include fonts.fontMobileBodyBold
+            
+    .Data
+        width: 100%
+    .CatBoxCard
+        width: 100%
+        height: auto
+    .Search
+        @include fonts.fontDesktopH4Medium
+    .CatBoxTitle
+        @include fonts.fontMobileH3Bold
+    .CatBoxCardDataTitle
+        @include fonts.fontMobileH4Bold
+    .CatBoxCardDataSubTitle
+        @include fonts.fontMobileBodyRegular
+    .ArticleBoxCard
+        width: 100%
+        height: auto
+    

@@ -1,0 +1,254 @@
+@use "../../../utils/colors.sass"
+@use "../../../utils/fonts.sass"
+
+$small: 730px
+$medium: 991px
+$issue: 1180px
+
+.BG
+    background: white
+.Container
+    margin: 2rem auto
+    width: 86.1%
+    display: flex
+    align-items: flex-start
+    gap: 1.25rem
+
+.Left
+    position: sticky
+    top: 1rem
+    display: flex
+    padding: 4.125rem var(--Spacing-24, 1.5rem)
+    flex-direction: column
+    align-items: flex-start
+    width: 16.9375rem
+    gap: 1rem
+
+.Right
+    display: flex
+    flex-direction: column
+    align-items: center 
+    gap: 2.5rem
+    padding: 4.125rem 0rem
+    min-height: 30rem
+    width: 39rem
+.Heading
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+    @include fonts.fontDesktopH4Bold
+    
+.SelectedContent
+    color: var(--primary-6, #009241)
+    cursor: pointer
+    @include fonts.fontDesktopBodyMedium
+    p
+        margin: 0
+        padding: 0
+    
+.content
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+    cursor: pointer
+    @include fonts.fontDesktopBodyRegular
+    p
+        margin: 0
+        padding: 0
+    
+.TitleImage
+    img
+        height: auto
+        width: 100%
+        align-self: stretch
+    
+.TitleData
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 1rem
+    align-self: stretch
+
+.blogContent
+    width: 100%
+    img
+        width: 100%
+        height: auto
+        align-self: stretch
+
+.Tag
+    display: flex
+    padding: 0.10313rem 1.2375rem
+    align-items: center
+    gap: 0.30938rem
+    border-radius: 1.03125rem
+    border: 2.2px solid var(--Gradient-Dark, #3E9B1D)
+
+.Tag
+    p
+        margin: 0
+        padding: 0
+        @include fonts.fontBodyMedium
+        
+.TitleHeading
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+        
+.TitleAuthorNDate
+    display: flex
+    width: 38.125rem
+    flex-direction: column
+    align-items: flex-start
+    gap: 0.25rem
+
+.Author
+    p
+        color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+        @include fonts.fontDesktopH5Medium
+        margin: 0
+        padding: 0
+        
+.Date
+    p
+        color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+        @include fonts.fontDesktopBodyRegular
+        margin: 0
+        padding: 0
+        
+.Description
+    p
+        color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+        font-size: 1.25rem
+        font-style: normal
+        font-weight: 400
+        line-height: 170%
+        margin: 0
+        padding: 0
+
+.DescImage
+    img
+        height: auto
+        width: 100%
+        align-self: stretch
+        border-radius: 12px
+
+.blogContent , .TitleHeading
+    color: #333 // Dark grey text
+    line-height: 1.6
+    font-size: 18px // Updated base font size
+
+    h1 
+        font-size: 48px
+        font-weight: bold
+        margin-bottom: 24px
+        line-height: 1.2
+    
+
+    h2 
+        font-size: 40px
+        font-weight: bold
+        margin-bottom: 22px
+        line-height: 1.25
+    
+
+    h3 
+        font-size: 32px
+        font-weight: bold
+        margin-bottom: 20px
+        line-height: 1.3
+    
+
+    h4 
+        font-size: 28px
+        font-weight: bold
+        margin-bottom: 18px
+        line-height: 1.35
+    
+
+    h5 
+        font-size: 24px
+        font-weight: bold
+        margin-bottom: 16px
+        line-height: 1.4
+    
+
+    h6 
+        font-size: 22px
+        font-weight: bold
+        margin-bottom: 14px
+        line-height: 1.45
+    
+
+    p 
+        font-size: 18px // Updated to new base size
+        margin-bottom: 20px
+        line-height: 1.6
+    
+
+    a 
+        color: #0066cc
+        text-decoration: none
+    
+
+    a:hover 
+        text-decoration: underline
+    
+
+    ul, ol 
+        margin-left: 20px
+        padding-left: 0
+    
+
+    li 
+        font-size: 18px // Ensure consistency with body text
+        margin-bottom: 10px
+        line-height: 1.6 // Added line height
+    
+
+    @media (max-width: 768px) 
+        h1  
+            font-size: 36px 
+        h2  
+            font-size: 30px 
+        h3  
+            font-size: 24px 
+        h4  
+            font-size: 22px 
+        h5  
+            font-size: 20px 
+        h6  
+            font-size: 18px 
+        p   
+            font-size: 16px 
+    
+
+
+
+
+@media (max-width: $small)
+    .Left
+        position: relative
+    .Container
+        flex-direction: column
+        align-items: center
+    .Right
+        width: 100%
+    .Heading
+        @include fonts.fontMobileH4Bold
+    .SelectedContent
+        @include fonts.fontMobileH5Medium
+    .content
+        @include fonts.fontMobileH5Regular
+        
+    .Tag
+        p
+            @include fonts.fontH5Regular
+    
+    .TitleHeading
+        h1
+            @include fonts.fontMobileH4Bold
+    .Author
+        p
+            @include fonts.fontH4Medium
+    .Date
+        p
+            @include fonts.fontH5Regular
+    .Description
+        p
+            @include fonts.fontMobileH5Regular
+    

@@ -1,0 +1,588 @@
+// @import 'https://fonts.googleapis.com/css?family=Roboto:400,500,700'
+
+
+
+@mixin fontNavBarButton
+    // font-family: var(--font-poppins), sans-serif
+    // font-size: 1rem
+    // font-style: normal
+    // font-weight: 400
+    // line-height: 150%
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.5rem
+    font-style: normal
+    font-weight: 500
+    line-height: 120%
+
+@mixin fontNavBarButtonMiniLaptop
+    // font-family: var(--font-poppins), sans-serif
+    // font-size: 1rem
+    // font-style: normal
+    // font-weight: 400
+    // line-height: 150%
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.0125rem
+    font-style: normal
+    font-weight: 500
+    line-height: 120%
+
+@mixin fontNavBarMiniLaptopBook
+    text-align: center
+    font-family: var(--font-poppins), sans-serif
+    font-size: 0.9rem
+    font-style: normal
+    font-weight: 500
+    line-height: 150%
+
+
+@mixin fontNavBar
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+    
+@mixin fontbold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.3125rem
+    font-style: normal
+    font-weight: 500
+    line-height: 150%
+
+@mixin fontHeadingLandingPage
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+    font-family: var(--font-poppins), sans-serif
+    font-size: 4.5rem
+    font-style: normal
+    font-weight: 700
+    line-height: 115%
+    
+@mixin fontDesktopH1Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 3.8125rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+@mixin fontDesktopH4Medium
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.6875rem
+    font-style: normal
+    font-weight: 500
+    line-height: 120% /* 2.025rem */
+
+@mixin fontDesktopH5Regular
+    /* Desktop/H5/Regular */
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.3125rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+
+@mixin fontH5Bold
+    /* H5/bold */
+    font-family: var(--font-poppins), sans-serif
+    // font-family: monospace
+    font-size: 1rem
+    font-style: normal
+    font-weight: 700
+    line-height: 1.5rem
+
+@mixin fontboldh2
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.875rem
+    font-style: normal
+    font-weight: 700
+    line-height: 2.5rem
+    
+@mixin fontboldh4
+    /* H4/regular */
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.25rem
+    font-style: normal
+    font-weight: 700
+    line-height: 1.75rem
+
+ 
+
+@mixin fontbodyRegular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 0.875rem
+    font-style: normal
+    font-weight: 400
+    line-height: 1.375rem
+
+    
+ 
+@mixin fontBodyH3Regular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.5rem
+    font-style: normal
+    font-weight: 500
+    line-height: 2rem
+
+    
+
+@mixin fontBodyRegularGrey
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+    
+
+
+@mixin fontH2Medium
+    /* H2/medium */
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.875rem
+    font-style: normal
+    font-weight: 500
+    line-height: 2.5rem
+
+
+
+@mixin fontH5Regular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+    
+
+
+@mixin fontDesktopBodyBold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1rem
+    font-style: normal
+    font-weight: 700
+    line-height: 1.5rem
+
+
+
+@mixin fontDesktopBodyMedium
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1rem
+    font-style: normal
+    font-weight: 500
+    line-height: 150% 
+    
+
+
+@mixin fontDesktopBodyRegular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150% 
+
+
+
+@mixin fontMobileH1Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 2.5rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120% 
+
+
+@mixin fontDesktopH2Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 2.9375rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+    
+@mixin fontDesktopH5Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.3125rem
+    font-style: normal
+    font-weight: 700
+    line-height: 150%
+    
+@mixin fontMobileH2Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 2.0625rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+@mixin fontMobileH5Regular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.1875rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+
+@mixin fontMobileH5Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.1875rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+@mixin fontMobileBodyRegular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+
+@mixin fontMobileSmallRegular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 0.8125rem
+    font-style: normal
+    font-weight: 400
+    line-height: 120%
+
+@mixin fontMobileH3Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.5rem
+    font-style: normal
+    font-weight: 700
+    line-height: 2rem
+
+@mixin fontMobileH3Medium
+    font-family: var(--font-poppins), sans-serif
+    font-size: 36px
+    font-style: normal
+    font-weight: 500
+    line-height: 120%
+
+@mixin fontMobileH3Regular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.75rem
+    font-style: normal
+    font-weight: 400
+    line-height: 120%
+
+
+@mixin fontMobileH4Regular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.4375rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150% 
+
+@mixin fontMobileH5Medium
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.1875rem
+    font-style: normal
+    font-weight: 500
+    line-height: 150%
+
+@mixin fontMobileH4Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.4375rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+@mixin fontH4Regular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.25rem
+    font-style: normal
+    font-weight: 400
+    line-height: 1.75rem
+
+@mixin fontMobileBodyBold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1rem
+    font-style: normal
+    font-weight: 700
+    line-height: 150%
+
+
+@mixin fontBodyMedium
+    font-family: var(--font-poppins), sans-serif
+    font-size: 0.875rem
+    font-style: normal
+    font-weight: 500
+    line-height: 1.375rem
+
+@mixin fontDesktopH3Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 2.25rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+@mixin fontDesktopH3Medium
+    font-family: var(--font-poppins), sans-serif
+    font-size: 2.25rem
+    font-style: normal
+    font-weight: 500
+    line-height: 120% 
+
+@mixin fontDesktopH3Regular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 2.25rem
+    font-style: normal
+    font-weight: 400
+    line-height: 120%
+
+@mixin fontDesktopH4Regular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.6875rem
+    font-style: normal
+    font-weight: 400
+    line-height: 120%
+
+@mixin fontDesktopH5Medium
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.3125rem
+    font-style: normal
+    font-weight: 500
+    line-height: 150%
+
+@mixin fontDesktopH4Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.6875rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+
+@mixin fontH4Medium
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.25rem
+    font-style: normal
+    font-weight: 500
+    line-height: 1.75rem
+
+@mixin fontH3Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.5rem
+    font-style: normal
+    font-weight: 700
+    line-height: 2rem
+
+
+@mixin fontDesktopH6Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.1125rem
+    font-style: normal
+    font-weight: 700
+    line-height: 150%
+
+
+@mixin fontDesktopH4Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.6875rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+
+@mixin fontDesktopH5Medium
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.3125rem
+    font-style: normal
+    font-weight: 500
+    line-height: 150%  //1.96875rem 
+
+@mixin fontButtonCareer
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.26563rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+@mixin fontDesktopTitle4Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 5rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+@mixin fontDesktopTitle3Bold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 6.5625rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+@mixin fontDesktopH6Medium
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.1125rem
+    font-style: normal
+    font-weight: 500
+    line-height: 150%
+
+@mixin fontDesktopH6Regular
+    /* Desktop/H5/Regular */
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.1125rem
+    font-style: normal
+    font-weight: 400
+    line-height: 120%
+
+@mixin fontMobileH6Regular
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.0875rem
+    font-style: normal
+    font-weight: 400
+    line-height: 120%
+
+@mixin fontFootnote
+    font-family: var(--font-poppins), sans-serif
+    font-size: 0.75rem
+    font-style: normal
+    font-weight: 400
+    line-height: 1.25rem
+
+@mixin fontH3Medium
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.5rem
+    font-style: normal
+    font-weight: 500
+    line-height: 2rem
+
+@mixin fontRightPane
+    font-family: var(--font-poppins), sans-serif
+    font-size: 3rem
+    font-style: normal
+    font-weight: 800
+    line-height: 150%
+
+@mixin fontLaptopHeroSectionTitle
+    font-family: var(--font-poppins), sans-serif
+    font-size: 3rem
+    font-style: normal
+    font-weight: 800
+    line-height: 120%
+
+@mixin fontLaptopHeroSectionSubTitle
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.5rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150% 
+
+
+@mixin fontMobileMediumHerosectionTitle
+    font-family: var(--font-poppins), sans-serif
+    font-size: 2.25rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+@mixin fontMobileMediumHerosectionSubTitle
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.1875rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+
+@mixin fontMobileSmallHeroSectionTitle
+    font-family: var(--font-poppins), sans-serif
+    font-size: 2rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+@mixin fontMobileSmallHeroSectionSubTitle
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+
+
+@mixin fontMobileSmallRegularHeroSection
+    font-family: var(--font-poppins), sans-serif
+    font-size: 0.8125rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+
+@mixin fontIntegrationMobileLargeSubtitle
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.125rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+
+
+@mixin fontIntegrationMobileSmallSubtitle
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+
+@mixin fontFeaturesMiniLaptopFrameCardTitle
+    font-family: var(--font-poppins), sans-serif
+    font-size: 2.025rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+
+@mixin fontFeaturesMiniLaptopFrameCardSubtitle
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.18125rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+
+@mixin fontFeaturesMobileLargeSubtitle
+    text-align: center
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.125rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+
+@mixin fontMobileLargeVideoSectionSubtitle
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.125rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150% 
+
+@mixin fontTestimonialMobileSmallQoute
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1.125rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+
+@mixin fontTabsTabletTabSubtitle
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1rem
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+
+@mixin fontCreationFlowMiniLaptopRightPane
+    text-align: center
+    font-family: var(--font-poppins), sans-serif
+    font-size: 2.23306rem
+    font-style: normal
+    font-weight: 800
+    line-height: 150%
+
+@mixin fontMobileBodyMedium
+    font-family: var(--font-poppins), sans-serif
+    font-size: 1rem
+    font-style: normal
+    font-weight: 500
+    line-height: 150%
+
+@mixin fontMobileSmallBold
+    font-family: var(--font-poppins), sans-serif
+    font-size: 0.8125rem
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+
+
+
+// @mixin fontDesktopH1Bold2
+//     font-family: var(--font-poppins), sans-serif
+//     font-size: 2.5rem
+//     font-style: normal
+//     font-weight: 700
+//     line-height: 120%

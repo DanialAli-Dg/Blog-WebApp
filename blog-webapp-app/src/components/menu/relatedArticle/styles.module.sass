@@ -1,0 +1,101 @@
+@use "../../../utils/colors.sass"
+@use "../../../utils/fonts.sass"
+
+$small: 730px
+$medium: 991px
+$issue: 1180px
+
+.BG
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 87, 0.15) 0%, rgba(0, 0, 0, 0.00) 100%), #FFF
+.Container
+    margin: 2rem auto
+    width: 86.1%
+    display: flex
+    padding: var(--Spacing-64, 4rem) 6.25rem
+    flex-direction: column
+    align-items: center
+    gap: var(--Spacing-64, 4rem)
+.Title
+    display: flex
+    align-items: center
+    gap: 0.25rem
+    align-self: stretch
+.Title
+    h1
+        padding: 0
+        margin: 0
+        color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+        @include fonts.fontDesktopH3Bold
+.Data
+    display: flex
+    align-items: flex-start
+    gap: 1.25rem
+    align-self: stretch
+    flex-wrap: wrap
+
+.ArticleBoxCard
+    display: flex
+    width: 18.3125rem
+    flex-direction: column
+    align-items: flex-start
+    border-radius: 0.625rem
+    background: var(--backgroundGrey, #F6F5F8)
+    cursor: pointer
+
+.ArticleBoxCard img
+    border-radius: 0.625rem 0.625rem 0rem 0rem
+    width: 100%
+    height: auto
+.BodyArticle
+    display: flex
+    padding: var(--Spacing-16, 1rem) var(--Spacing-24, 1.5rem)
+    flex-direction: column
+    align-items: flex-start
+    gap: var(--Spacing-16, 1rem)
+    align-self: stretch
+    height: 210.1px
+    justify-content: space-between
+    
+.TagArticle
+    display: flex
+    height: 2rem
+    padding: 0.0625rem 1rem
+    align-items: center
+    gap: 0.1875rem
+    border-radius: 0.625rem
+    border: 1px solid var(--primary-3, #91D0AD)
+
+.TagArticleText
+    @include fonts.fontFootnote
+    color: var(--primary-6, #009241)
+    margin: 0
+    padding: 0
+.TextArticle
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    align-self: stretch
+
+.TextArticleText
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85))
+    @include fonts.fontDesktopH5Regular
+    font-size: 1.2rem !important
+    margin: 0
+    padding: 0
+.AuthorArticle
+    @include fonts.fontDesktopBodyRegular
+    color: var(--character-primary-85, rgba(0, 0, 0, 0.85))
+    margin: 0
+    padding: 0
+.DateArticle
+    @include fonts.fontDesktopBodyRegular
+    color: var(--character-secondary-45, rgba(0, 0, 0, 0.45))
+    margin: 0
+    padding: 0
+
+
+
+
+@media (max-width: $small)
+ 
